@@ -1,0 +1,11 @@
+include ../first_screen.pug
+include ../services_screen.pug
+include ../contacts_screen.pug
+
+mixin blog-page
+    +b.blog-page
+        +first_screen
+        +b.blog-slider
+            +services_screen
+        +services_screen
+        +contacts_screen

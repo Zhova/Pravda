@@ -1,0 +1,11 @@
+mixin about_screen
+    +b.about.wrap
+        +b.VIDEO.about-video-bg(width="100%" preload)
+            source(src="./img/Power-up.mp4" type="video/mp4")
+        +b.about-gradient
+        +b.about-content.container_small
+            +b.play
+                img(src="./img/play.svg", alt="alt")
+            +b.title-block
+                +e.P.title SERVICES
+                +e.P.sub-title_small we have the best competencies in

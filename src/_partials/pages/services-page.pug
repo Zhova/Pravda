@@ -1,0 +1,9 @@
+include ../first_screen.pug
+include ../services_screen.pug
+include ../contacts_screen.pug
+
+mixin services-page
+    +b.services-page
+        +first_screen
+        +services_screen
+        +contacts_screen

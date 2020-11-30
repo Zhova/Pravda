@@ -1,0 +1,15 @@
+include ./services-list-item.pug
+
+
+mixin answers_screen 
+    +b.answers.wrap
+        +b.answers-content.container_small
+            +b.title-block
+                +e.P.title ANSWERS
+                +e.P.sub-title_small we have the best competencies in
+            +b.services-list
+                +services-list-item
+                +services-list-item
+                +services-list-item
+                +services-list-item
+                +services-list-item

@@ -1,0 +1,13 @@
+include ../first_screen.pug
+include ../director_screen.pug
+include ../about_screen.pug
+include ../strategy_screen.pug
+include ../contacts_screen.pug
+
+mixin about-page
+    +b.about-page
+        +first_screen
+        +director_screen
+        +about_screen
+        +strategy_screen
+        +contacts_screen

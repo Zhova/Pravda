@@ -1,0 +1,22 @@
+mixin contacts_screen 
+    +b.contacts.wrap
+        +b.contacts-content.container_small
+            +b.title-block
+                +e.P.title contacts
+                +e.P.sub-title_small we have the best competencies in
+            +b.contacts-form-wrap
+                +b.contacts-form-title
+                    +b.A.btn.btn_red.btn_narrow new yourk
+                    +e.P.title.title_regular 2749 Coney Island Ave Brooklyn, NY 11235
+                +b.contacts-form
+                    +e.header
+                        +e.A.phone.title_regular(href="tel:646 334-3327") (646) 334-3327
+                        +e.social
+                            +b.A.btn.btn_transp.btn_narrow.btn_social.facebook facebook
+                            +b.A.btn.btn_transp.btn_narrow.btn_social.linkedin linkedin
+                    +e.inputs-block
+                        +e.INPUT.name(type="text" placeholder="name")
+                        +e.INPUT.mail(type="email" placeholder="email")
+                        +e.INPUT.tel(type="tel" placeholder="number")
+                        +e.TEXTAREA.message(placeholder="description")
+                    +b.A.btn.btn_red.btn_bold lets go

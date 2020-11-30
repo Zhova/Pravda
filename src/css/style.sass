@@ -1,0 +1,765 @@
+$red: #FF4553
+
+*, *:after, *:before
+	box-sizing: border-box
+	font-family: 'Montserrat', sans-serif
+	padding: 0
+	margin: 0
+	text-decoration: none
+	color: inherit
+	max-width: 100%
+	font-weight: 300
+	outline: none
+
+ul
+	li
+		list-style: none
+
+.wrap
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.container
+	width: 100%
+	max-width: 1180px
+	&_small
+		padding-left: 180px
+
+.slick
+	&-slider
+		*
+			max-width: none
+	&-custom-arrow
+		border: 1px solid #FFFFFF
+		padding: 22px 57px
+		position: relative
+		&::before
+			content: ''
+
+			width: 18px
+			height: 12px
+			position: absolute
+
+		&-right
+			padding-right: 65px
+			padding-left: 55px
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.02273 5.03226H14.5001L10.9122 1.65367C10.5118 1.27664 10.5103 0.663916 10.9088 0.285093C11.3072 -0.0937778 11.9548 -0.0951806 12.3551 0.281803L17.6991 5.31406C17.6995 5.31435 17.6997 5.31469 17.7 5.31498C18.0993 5.69202 18.1006 6.30673 17.7001 6.68502C17.6998 6.68531 17.6995 6.68565 17.6992 6.68594L12.3552 11.7182C11.955 12.0951 11.3074 12.0938 10.9089 11.7149C10.5104 11.3361 10.5119 10.7234 10.9123 10.3463L14.5001 6.96774H1.02273C0.457876 6.96774 0 6.53448 0 6C0 5.46552 0.457876 5.03226 1.02273 5.03226Z' fill='white'/%3E%3C/svg%3E%0A")
+				right: 26px
+				top: 50%
+				transform: translateY(-50%)
+		&-left
+			padding-left: 65px
+			padding-right: 55px
+			&::before
+				background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.9773 5.03226H3.49989L7.08782 1.65367C7.48816 1.27664 7.4897 0.663916 7.09124 0.285093C6.69279 -0.0937778 6.0452 -0.0951806 5.64485 0.281803L0.300905 5.31406C0.300547 5.31435 0.300292 5.31469 0.299985 5.31498C-0.0993384 5.69202 -0.100617 6.30673 0.299883 6.68502C0.300241 6.68531 0.300496 6.68565 0.300803 6.68594L5.64475 11.7182C6.04505 12.0951 6.69264 12.0938 7.09114 11.7149C7.4896 11.3361 7.48806 10.7234 7.08772 10.3463L3.49989 6.96774H16.9773C17.5421 6.96774 18 6.53448 18 6C18 5.46552 17.5421 5.03226 16.9773 5.03226Z' fill='white'/%3E%3C/svg%3E%0A")
+				left: 26px
+				transform: translateY(-50%)
+				top: 50%
+
+.btn
+	border-radius: 50px
+	cursor: pointer
+	font-weight: 700
+	display: inline-block
+	&_transp
+		border: 1px solid $red
+		font-size: 11px
+	&_narrow
+		padding: 13px 25px
+	&_red
+		background: $red
+		color: #fff
+	&_bold
+		padding: 23px 50px
+	&_social
+		border: 1px solid #0B1B50
+	&__white
+		border: 1px solid #FFFFFF
+
+.title-block
+	margin-bottom: 13px
+	&__title
+		font-weight: 700
+		font-size: 36px
+		line-height: 44px
+		text-transform: uppercase
+		color: $red
+		margin-bottom: 15px
+	&__sub-title
+		font-weight: 500
+		font-size: 14px
+		line-height: 21px
+		max-width: 200px
+		&_small
+			max-width: 150px
+
+.title_regular
+	font-weight: bold
+	font-size: 22px
+	line-height: 27px
+	text-transform: uppercase
+
+.title_cases
+	font-weight: bold
+	font-size: 20px
+	line-height: 29px
+	text-transform: uppercase
+
+.desc_regular
+	font-size: 14px
+	line-height: 21px
+	color: #6D7696
+	font-weight: 400
+
+.header
+	position: absolute
+	color: #fff
+	padding-top: 38px
+	z-index: 1
+	&-content
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.btn-group
+		display: flex
+		.btn_consult
+			margin-right: 40px
+
+.main,.first
+	background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+	min-height: 100vh
+	color: #fff
+	&-content
+		padding-top: 120px
+		&__general-block
+			display: flex
+			justify-content: space-between
+	&-info
+		padding-top: 30px
+		max-width: 180px
+		&__item
+			margin-bottom: 30px
+			display: block
+			font-size: 16px
+			line-height: 21px
+			text-transform: capitalize
+		.phone
+			font-weight: 600
+		.text
+			font-weight: 500
+		.title
+			font-weight: 700
+	&-title
+		p,span
+			font-weight: 700
+			font-size: 48px
+			line-height: 68px
+			text-transform: uppercase
+			span
+				color: $red
+			&:last-of-type
+				margin-bottom: 50px
+			&:nth-child(2)
+				padding-left: 130px
+	&-slider
+		width: 100%
+		max-width: 1180px
+		display: flex !important
+		align-items: flex-end
+		// position: absolute !important
+		bottom: -20px
+		left: 50%
+		transform: translateX(-50%)
+		&__item
+			max-width: 840px
+			width: 43vw !important
+		.slick
+			&-slide
+				display: flex
+				justify-content: center
+				div
+					display: flex
+					justify-content: center
+		.slick-custom-arrow
+			margin-bottom: 80px
+
+.first
+	min-height: 50vh
+	background: url('../img/first-screenBG.png')
+	background-size: cover
+	position: relative
+	&-content
+		z-index: 1
+		&__general-block
+			align-items: center
+			width: 65%
+	.gradient
+		background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		opacity: 0.7
+
+.choice
+	min-height: calc(100vh + 20px)
+	padding-bottom: 270px
+	&-content
+		padding-top: 170px
+	&-list
+		&-wrap
+			float: right
+			width: 72%
+			.btn
+				margin-left: 50px
+		&__item
+			border: 1px solid rgba(29, 86, 222, 0.1)
+			padding: 20px 60px
+			margin-bottom: 20px
+			position: relative
+			&::before
+				content: ''
+				background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='20' height='20' fill='%231D56DE'/%3E%3C/svg%3E%0A")
+				position: absolute
+				left: 20px
+				top: 23px
+				width: 20px
+				height: 20px
+			&:first-child
+				.choice-list__desc
+					display: block
+			&:last-child
+				margin-bottom: 80px
+
+		&__title
+			color: #0B1B50
+			cursor: pointer
+		&__desc
+			margin-top: 13px
+			display: none
+
+.services,.answers
+	padding-top: 70px
+	padding-bottom: 200px
+	&-content
+		display: flex
+		justify-content: space-between
+	&-list
+		width: 68%
+	&-item
+		border-top: 1px solid rgba(29, 86, 222, .1)
+		padding: 50px 34px
+		color: #0B1B50
+		&__title
+			width: 50%
+			&-block
+				display: flex
+				margin-bottom: 57px
+		&__img-block,&__date
+			display: none
+		&__sub-title
+			width: 50%
+		&__view
+			position: relative
+			font-weight: 700
+			font-size: 10px
+			&::before
+				content: ''
+				position: absolute
+				background-image: url("data:image/svg+xml,%3Csvg width='21' height='11' viewBox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.4066 0L13.0383 0.00326127L17.7814 4.66024L0 4.66024L0 6.32345L17.7814 6.32345L13.0383 10.9804L15.3899 11L21 5.49185L15.4066 0Z' fill='%230B1B50'/%3E%3C/svg%3E%0A")
+				left: 65px
+				top: 50%
+				transform: translateY(-50%)
+				width: 21px
+				height: 11px
+		&:hover
+			color: #ffffff
+			background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+			border-radius: 2px
+			padding: 50px 34px
+			.services-item__sub-title
+				color: #fff
+			.services-item__view
+				&::before
+					background-image: url("data:image/svg+xml,%3Csvg width='21' height='11' viewBox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.4066 0L13.0383 0.00326127L17.7814 4.66024L0 4.66024L0 6.32345L17.7814 6.32345L13.0383 10.9804L15.3899 11L21 5.49185L15.4066 0Z' fill='white'/%3E%3C/svg%3E%0A")
+
+.answers
+	.services-item
+		display: flex
+		&__title-block
+			flex: 2
+			margin-bottom: 0
+		&__sub-title
+			display: none
+		&__view
+			flex: 1
+			display: flex
+			align-items: center
+
+.services-page
+	.services
+		&-content
+			flex-direction: column
+			align-items: center
+			padding-left: 0
+		&-list
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+		&-item
+			width: 50%
+			&:nth-child(2n+1)
+				border-right: 1px solid rgba(29, 86, 222, 0.1)
+			&__title
+				margin-bottom: 15px
+				&-block
+					flex-direction: column
+					z-index: 1
+			&:hover
+				background: url('../img/services-itemBG.png')
+.blog-slider
+	.services
+		&-item
+			display: flex
+
+			&:hover
+				background: #fff
+				color: #0B1B50
+				.services-item
+					border-bottom: 1px solid rgba(29, 86, 222, .1)
+					padding: 35px 0
+					&:first-child
+						border-top: 1px solid rgba(29, 86, 222, .1)
+					&__view::before
+						background-image: url("data:image/svg+xml,%3Csvg width='21' height='11' viewBox='0 0 21 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.4066 0L13.0383 0.00326127L17.7814 4.66024L0 4.66024L0 6.32345L17.7814 6.32345L13.0383 10.9804L15.3899 11L21 5.49185L15.4066 0Z' fill='%230B1B50'/%3E%3C/svg%3E%0A")
+
+					&__img-hover
+						display: block
+						position: absolute
+						left: 0
+						top: 0
+						width: 100%
+						height: 100%
+						background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+						opacity: 0.6
+
+			&__img-block
+				position: relative
+				display: block
+				flex: 1
+				margin-right: 30px
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			&__info
+				flex: 1
+			&__title
+				margin-bottom: 15px
+				&-block
+					flex-direction: column
+			&__sub-title
+				display: none
+			&__date
+				display: block
+				font-size: 10px
+				line-height: 12px
+				text-transform: uppercase
+.contacts
+	padding-top: 140px
+	padding-bottom: 320px
+	&-content
+		display: flex
+		justify-content: space-between
+	&-form
+		&-wrap
+			width: 68%
+			color: #0B1B50
+		&-title
+			max-width: 438px
+			margin-bottom: 60px
+			.btn
+				margin-bottom: 75px
+		&__header
+			display: flex
+			justify-content: space-between
+			padding-bottom: 50px
+			border-bottom: 1px solid rgba(29, 86, 222, .1)
+			margin-bottom: 80px
+		&__social
+			.facebook
+				margin-right: 50px
+		&__inputs-block
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		input,textarea
+			border: 0
+			width: 48%
+			border-bottom: 1px solid #1D56DE
+			resize: none
+			font-weight: 700
+			font-size: 13px
+			line-height: 16px
+			text-transform: uppercase
+			color: #0B1B50
+			margin-bottom: 50px
+			height: 45px
+			&::placeholder
+				font-weight: 700
+				font-size: 13px
+				line-height: 16px
+				text-transform: uppercase
+				color: #0B1B50
+				margin-bottom: 0
+		textarea
+			&::placeholder
+				transform: translateY(80%)
+
+.about
+	position: relative
+	color: #fff
+	height: 100vh
+	&-video-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+	&-gradient
+		background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		min-height: 100%
+		opacity: 0.7
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&-content
+		padding-top: 180px
+		z-index: 1
+		min-height: 100vh
+		.play
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			cursor: pointer
+
+.company
+	&-content
+		padding-top: 120px
+		padding-bottom: 200px
+		display: flex
+		justify-content: space-between
+	&-info
+		width: 70%
+		.numerals-block
+			padding: 50px 0
+			border-top: 1px solid rgba(29, 86, 222, .1)
+			border-bottom: 1px solid rgba(29, 86, 222, .1)
+			display: flex
+			align-items: flex-end
+			margin-bottom: 50px
+		.num-block
+			margin-right: 100px
+			&:last-child
+				margin-right: 0
+			&__num
+				font-weight: 900
+				font-size: 48px
+				line-height: 59px
+				background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				&_big
+					font-size: 96px
+					line-height: 117px
+			&__desc
+				font-weight: 400
+				font-size: 18px
+				line-height: 22px
+				color: #0B1B50
+
+.cases
+	background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+	color: #fff
+	padding-top: 140px
+	padding-bottom: 100px
+	&-content
+		position: relative
+	&-slider
+		padding-bottom: 100px
+		&__item
+			max-width: 550px
+
+		&__wrap
+			padding: 45px
+			border-bottom: 1px solid rgba(29, 86, 222, .1)
+			&:nth-child(2n+1)
+				border-right: 1px solid rgba(29, 86, 222, .1)
+			&:first-child
+				border-top: 1px solid rgba(29, 86, 222, .1)
+
+		&__title
+			margin-bottom: 15px
+		&__place
+			display: flex
+			align-items: center
+		&__num
+			color: #FF4D4F
+			font-weight: 900
+			font-size: 30px
+			line-height: 41px
+		&__city
+			font-weight: 400
+			font-size: 22px
+			line-height: 29px
+			text-transform: capitalize
+			color: #eeeeee
+			position: relative
+			margin-left: 45px
+			&::before
+				content: ''
+				position: absolute
+				left: -20px
+				width: 14px
+				height: 18px
+				top: 50%
+				transform: translateY(-50%)
+				background-image: url("data:image/svg+xml,%3Csvg width='14' height='18' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.78979 0C3.04579 0 0 3.04579 0 6.78932C0 12.1794 6.06126 17.5941 6.31942 17.8224C6.45442 17.9408 6.6221 18 6.78979 18C6.9641 18 7.13842 17.9361 7.27437 17.8086C7.53158 17.568 13.5796 11.8554 13.5796 6.78979C13.5796 3.04626 10.5328 0 6.78979 0ZM6.78979 10.0269C5.00163 10.0269 3.55263 8.577 3.55263 6.79026C3.55263 5.00353 5.00163 3.55358 6.78979 3.55358C8.577 3.55358 10.026 5.00305 10.026 6.79026C10.026 8.57747 8.577 10.0269 6.78979 10.0269Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='6.78979' y1='0' x2='6.78979' y2='18' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4D4F'/%3E%3Cstop offset='1' stop-color='%23FF3E78'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+		&__img-block
+			width: 100%
+			height: 350px
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+	.btn_bold
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 0px
+	.slick
+		&-slide
+			display: flex !important
+			justify-content: center
+		&-custom-arrow
+			position: absolute
+			bottom: 0
+			&-left
+				left: 0
+			&-right
+				right: 0
+
+.reviews
+	padding-top: 130px
+	padding-bottom: 120px
+	&-content
+		display: flex
+		justify-content: space-between
+		position: relative
+		.btn_red
+			position: absolute
+			bottom: 0
+			right: 42%
+	&-slider
+		width: 68%
+		padding-bottom: 160px
+		&__part
+			padding: 40px 3px
+			border-top: 1px solid rgba(29, 86, 222, .1)
+			border-bottom: 1px solid rgba(29, 86, 222, .1)
+		&__header
+			display: flex
+			margin-bottom: 25px
+			align-items: center
+		&__avatar
+			border-radius: 50%
+			width: 70px
+			height: 70px
+			overflow: hidden
+			margin-right: 20px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&__name
+			font-weight: bold
+			font-size: 14px
+			line-height: 17px
+			text-transform: uppercase
+			margin-bottom: 5px
+
+		&__place,&__desc
+			font-weight: normal
+			font-size: 14px
+			line-height: 20px
+			color: #6D7696
+		&__desc
+			margin-bottom: 15px
+		&__footer
+			display: flex
+			justify-content: space-between
+		&__date,&__more
+			color: #6D7696
+			font-size: 10px
+			line-height: 12px
+		&__more
+			color: #0B1B50
+			font-weight: bold
+		.slick-custom-arrow
+			position: absolute
+			bottom: 0
+			border: 1px solid #1A53D8
+			color: #1A53D8
+			&-right
+				right: 0
+				&::before
+					background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.02273 5.03226H14.5001L10.9122 1.65367C10.5118 1.27664 10.5103 0.663916 10.9088 0.285093C11.3072 -0.0937778 11.9548 -0.0951806 12.3551 0.281803L17.6991 5.31406C17.6995 5.31435 17.6997 5.31469 17.7 5.31498C18.0993 5.69202 18.1006 6.30673 17.7001 6.68502C17.6998 6.68531 17.6995 6.68565 17.6992 6.68594L12.3552 11.7182C11.955 12.0951 11.3074 12.0938 10.9089 11.7149C10.5104 11.3361 10.5119 10.7234 10.9123 10.3463L14.5001 6.96774H1.02273C0.457876 6.96774 0 6.53448 0 6C0 5.46552 0.457876 5.03226 1.02273 5.03226Z' fill='%231A53D8'/%3E%3C/svg%3E%0A")
+			&-left
+				right: 200px
+				&::before
+					background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.9773 5.03226H3.49989L7.08782 1.65367C7.48816 1.27664 7.4897 0.663916 7.09124 0.285093C6.69279 -0.0937778 6.0452 -0.0951806 5.64485 0.281803L0.300905 5.31406C0.300547 5.31435 0.300292 5.31469 0.299985 5.31498C-0.0993384 5.69202 -0.100617 6.30673 0.299883 6.68502C0.300241 6.68531 0.300496 6.68565 0.300803 6.68594L5.64475 11.7182C6.04505 12.0951 6.69264 12.0938 7.09114 11.7149C7.4896 11.3361 7.48806 10.7234 7.08772 10.3463L3.49989 6.96774H16.9773C17.5421 6.96774 18 6.53448 18 6C18 5.46552 17.5421 5.03226 16.9773 5.03226Z' fill='%231A53D8'/%3E%3C/svg%3E%0A")
+
+.clients
+	&-filter
+		width: 100%
+		padding-top: 90px
+		&-content
+			&__title
+				margin-bottom: 25px
+				font-weight: bold
+				font-size: 20px
+				line-height: 24px
+				color: #0B1B50
+		&-slider
+			padding-bottom: 80px
+			border-bottom: 1px solid rgba(29, 86, 222, .1)
+			.slick-slide
+				margin-right: 20px
+
+			&__item
+				border: 2px solid rgba(109, 118, 150, 0.6)
+				box-sizing: border-box
+				border-radius: 50px
+				padding: 12px 22px
+				display: flex
+				justify-content: center
+				align-items: center
+				a
+					display: block
+					font-weight: bold
+					font-size: 14px
+					line-height: 17px
+					text-transform: uppercase
+					color: #6D7696
+					opacity: 0.8
+					text-align: center
+		&-arrow
+			position: absolute
+			bottom: 40px
+			width: 18px
+			height: 12px
+			cursor: pointer
+			&-left
+				left: 0
+				background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.6' d='M16.9773 5.03226H3.49989L7.08782 1.65367C7.48817 1.27664 7.4897 0.663916 7.09125 0.285093C6.69279 -0.0937777 6.0452 -0.0951806 5.64485 0.281803L0.300905 5.31406C0.300547 5.31435 0.300292 5.31469 0.299985 5.31498C-0.0993384 5.69202 -0.100617 6.30673 0.299883 6.68502C0.300241 6.68531 0.300496 6.68565 0.300803 6.68594L5.64475 11.7182C6.04505 12.0951 6.69264 12.0938 7.09114 11.7149C7.4896 11.3361 7.48806 10.7234 7.08772 10.3463L3.49989 6.96774H16.9773C17.5421 6.96774 18 6.53448 18 6C18 5.46552 17.5421 5.03226 16.9773 5.03226Z' fill='%236D7696'/%3E%3C/svg%3E%0A")
+			&-right
+				left: 36px
+				background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.6' d='M1.02273 5.03226H14.5001L10.9122 1.65367C10.5118 1.27664 10.5103 0.663916 10.9088 0.285093C11.3072 -0.0937778 11.9548 -0.0951806 12.3551 0.281803L17.6991 5.31406C17.6995 5.31435 17.6997 5.31469 17.7 5.31498C18.0993 5.69202 18.1006 6.30673 17.7001 6.68502C17.6998 6.68531 17.6995 6.68565 17.6992 6.68594L12.3552 11.7182C11.955 12.0951 11.3074 12.0938 10.9089 11.7149C10.5104 11.3361 10.5119 10.7234 10.9123 10.3463L14.5001 6.96774H1.02273C0.457876 6.96774 0 6.53448 0 6C0 5.46552 0.457876 5.03226 1.02273 5.03226Z' fill='%236D7696'/%3E%3C/svg%3E%0A")
+
+	&-page
+		.cases
+			background: #fff
+			color: #0B1B50
+			&-slider
+				&__city
+					color: #0B1B50
+			.slick-custom-arrow
+				border: 1px solid #1A53D8
+				&-left
+					right: 210px
+					left: auto
+					&::before
+						background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.9773 5.03226H3.49989L7.08782 1.65367C7.48816 1.27664 7.4897 0.663916 7.09124 0.285093C6.69279 -0.0937778 6.0452 -0.0951806 5.64485 0.281803L0.300905 5.31406C0.300547 5.31435 0.300292 5.31469 0.299985 5.31498C-0.0993384 5.69202 -0.100617 6.30673 0.299883 6.68502C0.300241 6.68531 0.300496 6.68565 0.300803 6.68594L5.64475 11.7182C6.04505 12.0951 6.69264 12.0938 7.09114 11.7149C7.4896 11.3361 7.48806 10.7234 7.08772 10.3463L3.49989 6.96774H16.9773C17.5421 6.96774 18 6.53448 18 6C18 5.46552 17.5421 5.03226 16.9773 5.03226Z' fill='%236D7696'/%3E%3C/svg%3E%0A")
+				&-right
+					right: 0
+					&::before
+						background-image: url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.02273 5.03226H14.5001L10.9122 1.65367C10.5118 1.27664 10.5103 0.663916 10.9088 0.285093C11.3072 -0.0937778 11.9548 -0.0951806 12.3551 0.281803L17.6991 5.31406C17.6995 5.31435 17.6997 5.31469 17.7 5.31498C18.0993 5.69202 18.1006 6.30673 17.7001 6.68502C17.6998 6.68531 17.6995 6.68565 17.6992 6.68594L12.3552 11.7182C11.955 12.0951 11.3074 12.0938 10.9089 11.7149C10.5104 11.3361 10.5119 10.7234 10.9123 10.3463L14.5001 6.96774H1.02273C0.457876 6.96774 0 6.53448 0 6C0 5.46552 0.457876 5.03226 1.02273 5.03226Z' fill='%231A53D8'/%3E%3C/svg%3E%0A")
+
+.director
+	padding: 100px 0
+	&-content
+		display: flex
+		justify-content: space-between
+	&-info
+		width: 68%
+		&__img-block
+			width: 700px
+			height: 340px
+			margin-bottom: 60px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&__text
+			margin-bottom: 20px
+			font-weight: normal
+			font-size: 14px
+			line-height: 21px
+			color: #0B1B50
+			&:last-of-type
+				margin-bottom: 60px
+
+.footer
+	background: #062288
+	padding-top: 120px
+	padding-bottom: 60px
+	color: #C6C6C6
+
+	&-content
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	&-nav,.copyright
+		width: 68%
+	.copyright
+		color: #fff
+
+	&-nav
+		display: flex
+		margin-bottom: 170px
+		&__seo,&__menu
+			margin-right: 100px
+		&__contacts
+			display: flex
+			flex-direction: column
+		&__address
+			span
+				display: block
+
+		li,&__mail,&__phone
+				margin-bottom: 7px
+				font-weight: 400
+				font-size: 14px
+				line-height: 17px
+				text-transform: capitalize
+		&__social-block
+			display: flex
+		&__address
+			margin-bottom: 15px
+		&__facebook
+			width: 30px
+			height: 30px
+			display: block
+			background-size: cover
+			margin-right: 20px
+			background: url('../img/facebook.png')

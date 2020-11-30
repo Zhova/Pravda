@@ -1,0 +1,62 @@
+include bemto/bemto.pug
+
+//- include partials
+//- Хедер
+include _partials/header.pug
+
+//- Главная
+include _partials/pages/general-page.pug
+
+include _partials/pages/faq-page.pug
+
+include _partials/pages/services-page.pug
+
+include _partials/pages/blog-page.pug
+
+include _partials/pages/clients-page.pug
+
+include _partials/pages/about-page.pug
+
+//- Футер
+include _partials/footer.pug
+
+
+
+doctype html 
+html
+	head
+		link(rel="shortcut icon" href="img/fav-redpix.png" type="image/png")
+		title title
+		
+		//- include style.css
+		link(rel="stylesheet" type="text/css" href="css/all_style.css")
+
+		link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
+		//- include animate.css
+		//- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+		link(rel="preconnect" href="https://fonts.gstatic.com")
+		link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+	body
+		+header
+		//- +general-page
+		//- +faq-page
+		//- +services-page
+		//- +blog-page
+		//- +clients-page
+		+about-page
+		+footer
+
+
+
+
+		//- wow js
+		//- script(src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js")
+		//- script new WOW().init();
+		//- libs js
+		script(type="text/javascript" src="js/all_libs.js")
+		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+		//- js
+		script(type="text/javascript" src="js/all_js.js")

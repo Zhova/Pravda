@@ -1,0 +1,15 @@
+include ./services-list-item.pug
+
+
+mixin services_screen 
+    +b.services.wrap
+        +b.services-content.container_small
+            +b.title-block
+                +e.P.title SERVICES
+                +e.P.sub-title_small we have the best competencies in
+            +b.services-list
+                +services-list-item
+                +services-list-item
+                +services-list-item
+                +services-list-item
+                +services-list-item

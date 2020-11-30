@@ -1,0 +1,12 @@
+include ./choice-list.pug
+
+
+mixin choice-us_screen 
+    +b.choice.wrap
+        +b.choice-content.container_small
+            +b.title-block
+                +e.P.title Why choose us?
+                +e.P.sub-title we are a strategic partner to our client
+            +b.choice-list-wrap
+                +choice-list
+                +b.A.btn.btn_red.btn_bold.btn_menu TRY NOW

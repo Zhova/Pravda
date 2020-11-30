@@ -1,0 +1,13 @@
+include ../first_screen.pug
+include ../clients-filter.pug
+include ../clients_screen.pug
+include ../company_screen.pug
+include ../contacts_screen.pug
+
+mixin clients-page
+    +b.clients-page
+        +first_screen
+        +clients-filter
+        +clients_screen
+        +company_screen
+        +contacts_screen
