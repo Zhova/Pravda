@@ -1,0 +1,11 @@
+include ../first_screen.pug
+include ../info-client_screen.pug
+include ../cases_screen.pug
+include ../contacts_screen.pug
+
+mixin client-page
+    +b.client-page
+        +first_screen
+        +info-client_screen
+        +cases_screen
+        +contacts_screen

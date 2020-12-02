@@ -78,6 +78,10 @@ ul
 		border: 1px solid #0B1B50
 	&__white
 		border: 1px solid #FFFFFF
+	&-wrap
+		width: 100%
+		display: flex
+		justify-content: center
 
 .title-block
 	margin-bottom: 13px
@@ -321,7 +325,7 @@ ul
 					z-index: 1
 			&:hover
 				background: url('../img/services-itemBG.png')
-.blog-slider
+.blog-slider,.one-blog-page
 	.services
 		&-item
 			display: flex
@@ -719,6 +723,224 @@ ul
 			&:last-of-type
 				margin-bottom: 60px
 
+.info-client
+	padding-top: 70px
+	padding-bottom: 100px
+	&-content
+		max-width: 800px
+	.title-block
+		max-width: 550px
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 34px
+		&__title
+			color: #0B1B50
+		&__num
+			color: #FF4D4F
+			font-weight: 900
+			font-size: 64px
+			line-height: 86px
+			text-align: center
+	&-info
+		&__lap-top-block
+			margin-bottom: 50px
+			img
+				margin-bottom: 30px
+		&__img-block
+			width: 100%
+			height: 340px
+			margin: 30px 0
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%
+		&__img-desc
+			font-style: italic
+			font-weight: normal
+			font-size: 14px
+			line-height: 21px
+			text-align: center
+			color: #6D7696
+			max-width: 585px
+			margin: 0 auto
+		&__text
+			font-weight: normal
+			font-size: 14px
+			line-height: 21px
+			color: #0B1B50
+			margin-bottom: 30px
+		&__title
+			font-weight: bold
+			font-size: 22px
+			line-height: 27px
+			text-transform: uppercase
+			color: #0B1B50
+			margin-bottom: 20px
+
+.one-blog-page
+	.title-block
+		&__num
+			font-size: 14px
+			line-height: 21px
+			text-align: center
+			color: #6D7696
+
+.local-seo-page
+	.title-block
+		&__title
+			color: #FF4553
+		&__num
+			display: none
+.google-business
+	padding: 120px 0
+	.title-block
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 122px
+		&__sub-title
+			max-width: 375px
+			margin: 0 auto
+	&-list
+		display: flex
+		margin-bottom: 60px
+
+		&__item
+			background: #FFFFFF
+			border: 1px solid rgba(29, 86, 222, 0.1)
+			border-radius: 2px
+			margin-right: 30px
+			padding: 45px 40px
+			position: relative
+			&::after
+				position: absolute
+				top: -15%
+				left: 50%
+				transform: translateX(-50%)
+				color: #1B55DC
+				opacity: .2
+				font-weight: 900
+				font-size: 144px
+				line-height: 68px
+				text-align: center
+				text-transform: uppercase
+				z-index: -1
+
+			&:nth-child(1)
+				&::after
+					content: '01'
+			&:nth-child(2)
+				&::after
+					content: '02'
+			&:nth-child(3)
+				&::after
+					content: '03'
+
+			&:last-child
+				margin-right: 0
+		&__title
+			font-weight: bold
+			font-size: 22px
+			line-height: 27px
+			text-transform: uppercase
+			color: #0B1B50
+			margin-bottom: 30px
+		&__desc-block
+			p
+				font-weight: normal
+				font-size: 14px
+				line-height: 21px
+				color: #6D7696
+				margin-bottom: 30px
+.need-seo
+	padding: 100px 0
+	background: linear-gradient(77.45deg, #0C288E 2.45%, #1B55DC 79.11%)
+
+	.title-block
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 60px
+		&__sub-title
+			max-width: 375px
+			margin: 0 auto
+			color: #fff
+	&-content
+		&__list
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		&__item
+			width: 48%
+			margin-bottom: 30px
+			display: flex
+			align-items: center
+			color: #fff
+			border: 1px solid rgba(255, 255, 255, 0.1)
+			border-radius: 2px
+			padding: 35px 30px
+			&:hover
+				background: rgba(255, 255, 255, 0.05)
+				.need-seo-content__block-num
+					background: #FF4553
+		&__block
+			&-num
+				background: rgba(255, 255, 255, .05)
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 90px
+				height: 90px
+				flex: 1
+				margin-right: 30px
+
+			&-text
+				flex: 4
+
+		&__num
+			font-weight: 900
+			font-size: 36px
+			line-height: 68px
+			text-align: center
+			text-transform: uppercase
+		&__title
+			font-weight: bold
+			font-size: 22px
+			line-height: 27px
+			text-transform: uppercase
+			margin-bottom: 11px
+		&__desc
+			font-weight: normal
+			font-size: 14px
+			line-height: 21px
+			color: #EEEEEE
+
+.offer
+	padding: 100px 0
+	&-content
+		display: flex
+		justify-content: space-between
+		.title-block
+			margin-bottom: 80px
+		.choice-list
+			&__item
+				pointer-events: none
+			&__desc
+				display: block
+	&_left-block,&_right-block
+		width: 48%
+	&-img
+		&__wrap
+			width: 400px
+			height: 600px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	&_right-block
+		padding-top: 100px
+		.offer-img
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 140px
 .footer
 	background: #062288
 	padding-top: 120px

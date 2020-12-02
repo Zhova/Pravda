@@ -1,0 +1,17 @@
+include ../first_screen.pug
+include ../info-client_screen.pug
+include ../google-business_screen.pug
+include ../need-seo_screen.pug
+include ../offer_screen.pug
+//- include ../what-search_screen.pug
+include ../contacts_screen.pug
+
+mixin local-seo-page
+    +b.local-seo-page
+        +first_screen
+        +info-client_screen
+        +google-business_screen
+        +need-seo_screen
+        +offer_screen
+        //- +what-search_screen 
+        +contacts_screen

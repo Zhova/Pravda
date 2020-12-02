@@ -1,0 +1,25 @@
+include ./choice-list.pug
+
+
+mixin offer_screen 
+    +b.offer.wrap
+        +b.offer-content.container
+            
+            +b.offer_left-block
+                +b.title-block
+                    +e.P.title you need seo
+                    +e.P.sub-title_small we have the best competencies in
+                +b.offer-list
+                    +choice-list
+                +b.offer-img
+                    +e.wrap
+                        img(src="./img/offer-img.png", alt="alt")
+            
+            +b.offer_right-block
+                +b.offer-img
+                    +e.wrap
+                        img(src="./img/offer-img.png", alt="alt")
+                +b.offer-list
+                    +choice-list
+                +b.A.btn.btn_red.btn_bold TRY NOW
+            

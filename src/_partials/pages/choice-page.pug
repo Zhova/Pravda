@@ -1,0 +1,15 @@
+include ../first_screen.pug
+include ../choice-us_screen.pug
+include ../services_screen.pug
+include ../strategy_screen.pug
+include ../contacts_screen.pug
+
+
+mixin choice-page
+    +b.choice-page
+        +first_screen
+        +choice-us_screen
+        +strategy_screen
+        +b.blog-slider
+            +services_screen
+        +contacts_screen

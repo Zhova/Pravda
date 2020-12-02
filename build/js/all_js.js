@@ -34,7 +34,15 @@ $(document).ready(function () {
     slidesToScroll: 1,
     nextArrow: '<div class="btn slick-custom-arrow slick-custom-arrow-right">Prew</div>',
     prevArrow: '<div class="btn slick-custom-arrow slick-custom-arrow-left">Next</div>'
-  });
+  }); // $(".blog-slider").slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   nextArrow:
+  //     '<div class="btn slick-custom-arrow slick-custom-arrow-right">Prew</div>',
+  //   prevArrow:
+  //     '<div class="btn slick-custom-arrow slick-custom-arrow-left">Next</div>',
+  // });
+
   $(".reviews-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
